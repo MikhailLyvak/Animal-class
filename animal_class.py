@@ -1,7 +1,3 @@
-# Пиши свій код тут
-from turtle import position
-
-
 class Animal:
     def __init__(self, name: str, current_fead: int, max_fead: int, speed: int, loss_fead_per_km: int, position: int = 0):
         self.name = name
