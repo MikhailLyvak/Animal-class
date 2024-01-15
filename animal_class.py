@@ -14,7 +14,7 @@ class Animal:
     def __str__(self) -> str:
         return f"{self.name} Feed: {self.current_fead}/{self.max_fead} Speed: {self.speed} Loss: {self.loss_fead_per_km} | Position: {self.position}"
         
-    def can_move_to (self, distance: int, animal) -> bool:
+   def can_move_to (self, distance: int, animal: "Animal") -> bool:
         required_feed = distance * self.loss_fead_per_km
         return animal.current_fead >= required_feed
     
